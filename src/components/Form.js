@@ -17,7 +17,7 @@ function Form({ inputText, setInputText, todos, setTodos, setTodoFilter }) {
         <form>
             <input type="text" value={inputText} onChange={inputTextHandler} />
             <button type="submit" onClick={submitTodoHandler} >
-                <i class="fas fa-plus"></i>
+                <i className="fas fa-plus"></i>
             </button>
             <div>
                 <select onChange={inputSelectHandler} name="todos">

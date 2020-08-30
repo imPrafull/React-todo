@@ -19,8 +19,8 @@ function Todo({ todo, todos, setTodos}) {
         <div className="todo-item">
             <li>{todo.text}</li>
             <div className="buttons" >
-                <button onClick={completeHandler} >{todo.completed ? <i class="fas fa-times"></i> : <i class="fas fa-check"></i>}</button>
-                <button onClick={deleteHandler} ><i class="fas fa-trash-alt"></i></button>
+                <button onClick={completeHandler} >{todo.completed ? <i className="fas fa-times"></i> : <i className="fas fa-check"></i>}</button>
+                <button onClick={deleteHandler} ><i className="fas fa-trash-alt"></i></button>
             </div>
         </div>
     )
