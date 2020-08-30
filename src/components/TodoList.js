@@ -1,9 +1,11 @@
 import React from 'react';
-import Todo from './Todo'
+import '../App.css';
+
+import Todo from './Todo';
 
 function TodoList({todos, setTodos, filteredTodos}) {
     return (
-        <div>
+        <div className="todo-list">
             <ul>
                 { 
                     filteredTodos.map(todo => (

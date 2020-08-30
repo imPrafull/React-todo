@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    margin: 0 auto;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 3rem;
+}
+
+form {
+    width: 80%;
+    margin: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+form button, form input {
+    padding: .5rem;
+}
+
+form select {
+    margin-left: 4rem;
+    padding: .5rem .1rem;
+}
+
+form input {
+    min-width: 5rem;
+    width: 50%;
+}
+
+.todo-list {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.todo-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.todo-item .buttons {
+    min-width: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item button {
+    margin-left: 1rem;
+    padding: .3rem;
+}
+
+.todo-item li {
+    flex-basis: 80%;
+}

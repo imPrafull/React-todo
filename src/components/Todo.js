@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 function Todo({ todo, todos, setTodos}) {
     const deleteHandler = () => {
@@ -15,10 +16,12 @@ function Todo({ todo, todos, setTodos}) {
     }
 
     return (
-        <div>
+        <div className="todo-item">
             <li>{todo.text}</li>
-            <button onClick={completeHandler} >{todo.completed ? 'Not Done' : 'Done'}</button>
-            <button onClick={deleteHandler} >Delete</button>
+            <div className="buttons" >
+                <button onClick={completeHandler} >{todo.completed ? <i class="fas fa-times"></i> : <i class="fas fa-check"></i>}</button>
+                <button onClick={deleteHandler} ><i class="fas fa-trash-alt"></i></button>
+            </div>
         </div>
     )
 }

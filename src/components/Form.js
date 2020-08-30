@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 function Form({ inputText, setInputText, todos, setTodos, setTodoFilter }) {
     const inputTextHandler = (e) => {
@@ -16,7 +17,7 @@ function Form({ inputText, setInputText, todos, setTodos, setTodoFilter }) {
         <form>
             <input type="text" value={inputText} onChange={inputTextHandler} />
             <button type="submit" onClick={submitTodoHandler} >
-                Add
+                <i class="fas fa-plus"></i>
             </button>
             <div>
                 <select onChange={inputSelectHandler} name="todos">
