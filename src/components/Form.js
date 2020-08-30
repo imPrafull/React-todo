@@ -15,11 +15,11 @@ function Form({ inputText, setInputText, todos, setTodos, setTodoFilter }) {
     }
     return (
         <form>
-            <input type="text" value={inputText} onChange={inputTextHandler} />
+            <input placeholder="What do you want to do?" type="text" value={inputText} onChange={inputTextHandler} />
             <button type="submit" onClick={submitTodoHandler} >
                 <i className="fas fa-plus"></i>
             </button>
-            <div>
+            <div className="custom-select">
                 <select onChange={inputSelectHandler} name="todos">
                     <option value="all">All</option>
                     <option value="complete">Complete</option>

@@ -17,10 +17,10 @@ function Todo({ todo, todos, setTodos}) {
 
     return (
         <div className="todo-item">
-            <li>{todo.text}</li>
+            <li className={todo.completed ? "completed" : ""} >{todo.text}</li>
             <div className="buttons" >
-                <button onClick={completeHandler} >{todo.completed ? <i className="fas fa-times"></i> : <i className="fas fa-check"></i>}</button>
-                <button onClick={deleteHandler} ><i className="fas fa-trash-alt"></i></button>
+                <button className="check-button" onClick={completeHandler} >{todo.completed ? <i className="fas fa-times"></i> : <i className="fas fa-check"></i>}</button>
+                <button className="trash-button" onClick={deleteHandler} ><i className="fas fa-trash-alt"></i></button>
             </div>
         </div>
     )
